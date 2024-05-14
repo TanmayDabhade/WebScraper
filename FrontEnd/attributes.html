@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose Attribute</title>
+</head>
+<body>
+    <h1>Choose an Attribute</h1>
+    <form action="/choose" method="post">
+        <input type="hidden" name="url" value="{{ url }}">
+        <input type="hidden" name="element" value="{{ element }}">
+        <label for="attribute">Attribute:</label>
+        <select id="attribute" name="attribute" required>
+            {% for attribute in attributes %}
+                <option value="{{ attribute }}">{{ attribute }}</option>
+            {% endfor %}
+        </select><br><br>
+        <input type="submit" value="Get Values">
+    </form>
+</body>
+</html>
