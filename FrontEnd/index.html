@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Web Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
 </head>
 <body>
+<div class="container">
     <h1>Web Scraper</h1>
     <form action="/scrape" method="post">
         <label for="url">URL:</label>
         <input type="text" id="url" name="url" required><br><br>
         <label for="element">Element:</label>
-        <input type="text" id="element" name="element" required><br><br>
+        <input type="text" id="element" name="element"><br><br>
         <input type="submit" value="Scrape">
     </form>
+</div>
 </body>
 </html>

@@ -1,0 +1,58 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Style for the main heading */
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Style for the paragraph displaying the attribute */
+p {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style for the unordered list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for list items */
+ul li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the 'Go Back' link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Style for the 'Go Back' link on hover */
+a:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s ease-in-out;
+}

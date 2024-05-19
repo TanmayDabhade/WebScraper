@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Choose Attribute</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='attributes.css') }}">
 </head>
 <body>
+<div class = "container">
     <h1>Choose an Attribute</h1>
     <form action="/choose" method="post">
         <input type="hidden" name="url" value="{{ url }}">
@@ -17,5 +19,7 @@
         </select><br><br>
         <input type="submit" value="Get Values">
     </form>
+</div>
+
 </body>
 </html>

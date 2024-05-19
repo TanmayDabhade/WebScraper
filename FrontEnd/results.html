@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Attribute Values</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='results.css') }}">
+    <title>Extraction Results</title>
 </head>
 <body>
-    <h1>Attribute Values</h1>
-    <p>Attribute: {{ attribute }}</p>
+    <h1>Extraction Results for Attribute: {{ attribute }}</h1>
+    <a href="/download/{{ csv_file }}">Download Results as CSV</a>
     <ul>
         {% for result in results %}
             <li>{{ result }}</li>
         {% endfor %}
     </ul>
-    <a href="/">Go Back</a>
+
 </body>
 </html>
