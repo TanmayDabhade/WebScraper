@@ -31,14 +31,10 @@ def getAttributes():
     attribute = request.form['attribute']
     link = request.form['url']
     elements_to_extract = request.form['element']
-
     page = requests.get(link)
     soup = BS(page.content, 'html.parser')
-
     elements = soup.find_all(elements_to_extract)
     results = [el.get(attribute, 'N/A') for el in elements]
-
-    # Save results to a CSV file
     csv_file = 'scraped_data.csv'
     with open(csv_file, mode='w', newline='') as file:
         writer = csv.writer(file)
